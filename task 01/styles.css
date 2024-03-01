@@ -1,0 +1,32 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.nav-item:hover {
+  background-color: #555;
+}
+
+.content {
+  margin-top: 60px; /* Adjust this margin to prevent content from being covered by the fixed navbar */
+}
